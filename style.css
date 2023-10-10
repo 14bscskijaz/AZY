@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 10vw;
+}
+
+.logo {
+    width: 50px;
+    align-self: top;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.left-nav {
+    display: flex;
+    column-gap: 2vw;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: .5vh;
+    transition: all .3s ease-in;
+    color: black;
+
+}
+
+header a:hover {
+    border-bottom: .5px solid #386598;
+}
+
+.section-1 {
+    background-color: blueviolet;
+    height: 80vh;
+}
+
+footer {
+    padding: 4vh 10vw 1vh 10vw;
+    background-color: lightgray;
+
+}
+
+.footer-grid {
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: auto 9fr;
+    padding-bottom: 5vh;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col p {
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-end p {
+    font-size: 14px;
+}
