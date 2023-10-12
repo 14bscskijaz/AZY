@@ -270,9 +270,39 @@ span {
 
 }
 
+.section-8 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.client-tiles {
+    display: flex;
+    column-gap: 4vw;
+    justify-content: space-between;
+}
+
+.client-tile {
+    display: flex;
+    column-gap: 2vw;
+    align-items: start;
+}
+
+.client-tile img {
+    width: 5vw;
+    object-fit: contain;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
 footer {
     padding: 4vh 10vw 3vh 10vw;
-    background-color: lightgray;
+    background-color: #eaf4f4;
 
 }
 
