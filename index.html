@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Energy</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    <title>AZY Commodities</title>
 </head>
 
 <body>
@@ -39,7 +43,7 @@
             <button>How it Works</button>
         </div>
     </section>
-    <section class="section-2">
+    <section data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1300" class="section-2">
         <div class="benefit">
             <img src="assets/solar-energy.png" alt="">
             <h3>Lorem, ipsum.</h3>
@@ -59,7 +63,7 @@
                 exercitationem error! Facere, iure.</p>
         </div>
     </section>
-    <section class="section-3">
+    <section data-aos="zoom-out" data-aos-delay="80" data-aos-duration="1300" class="section-3">
         <div class="content">
             <div class="heading">
                 <span>Solar Enterprise</span>
@@ -76,7 +80,7 @@
         </div>
         <img src="assets/img1.jpg" alt="">
     </section>
-    <section class="section-4">
+    <section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1300" class="section-4">
         <span class="section-heading">Products</span>
         <div class="cards">
             <div class="card">
@@ -107,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="section-5">
+    <section data-aos="zoom-out" data-aos-delay="80" data-aos-duration="1300" class="section-5">
         <span class="section-heading">Brands</span>
         <div class="boxes">
             <button class="left-arrow"></button>
@@ -133,7 +137,7 @@
         </p>
         <button>Ask us a question</button>
     </section>
-    <section class="section-7">
+    <section data-aos="zoom-out" data-aos-delay="80" data-aos-duration="1300" class="section-7">
         <span class="section-heading">Hello World</span>
         <div class="location-cards">
             <div class="location-card lc-1">
@@ -162,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="section-8">
+    <section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1300" class="section-8">
         <span class="section-heading">Happy Clients</span>
         <h2>User's Testimonials</h2>
         <div class="client-tiles">
@@ -204,6 +208,35 @@
                     </p>
                     <p style="color: #00a776; font-weight: 600;">Customer 1</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-9">
+        <span class="section-heading">Statistical Data</span>
+        <p style="width: 75%; text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem earum quos
+            distinctio itaque labore
+            necessitatibus harum et enim ea obcaecati.</p>
+        <div class="stats-flex">
+            <div class="stat">
+                <b id="stat1"></b>
+                <p>Working Staff</p>
+            </div>
+            <div class="stat">
+                <b id="stat2"></b>
+                <p>Working Staff</p>
+            </div>
+            <div class="stat">
+                <b id="stat3"></b>
+                <p>Working Staff</p>
+            </div>
+            <div class="stat">
+                <b id="stat4"></b>
+                <p>Working Staff</p>
+            </div>
+            <div class="stat">
+                <b id="stat5"></b>
+                <p>Working Staff</p>
             </div>
         </div>
     </section>
@@ -264,6 +297,147 @@
             </div>
         </div>
     </footer>
+    <script>
+
+
+        // Get a reference to the footer element
+        const staff = document.getElementById("stat1");
+        console.log(staff);
+        console.log("Hello World")
+        const space = document.getElementById("stat2");
+        const capacity = document.getElementById("stat3");
+        const stock = document.getElementById("stat4");
+        const cartons = document.getElementById("stat5");
+
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+
+        let isCounting = false;
+        let staffCounter = 0;
+        let spaceCount = 0;
+        let capacityCount = 0;
+        let stockCount = 0;
+        let cartonCount = 0;
+        // Function to start the counter
+        function startCounter() {
+
+            if (!isCounting) {
+                // biniding all functions
+                spaceCounter();
+
+                isCounting = true;
+                const interval = setInterval(() => {
+                    if (staffCounter <= 300) {
+                        staff.textContent = staffCounter;
+                        staffCounter++;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 5);
+            }
+        }
+        // space counter
+        function spaceCounter() {
+            if (!isCounting) {
+                capacityCounter();
+                isCounting = true;
+                const spaceInterval = setInterval(() => {
+                    if (spaceCount <= 30000) {
+                        // Update the counter in your footer
+
+                        space.textContent = spaceCount;
+                        spaceCount += 250;
+                    } else {
+                        clearInterval(spaceInterval);
+                    }
+                }, 5); // Adjust the interval for the desired animation speed
+            }
+        }
+        // capacity counter
+        function capacityCounter() {
+
+            if (!isCounting) {
+                stockCounter();
+                isCounting = true;
+                const spaceInterval = setInterval(() => {
+                    if (capacityCount <= 15000) {
+                        // Update the counter in your footer
+
+                        capacity.textContent = capacityCount;
+                        capacityCount += 100;
+                    } else {
+                        clearInterval(spaceInterval);
+                    }
+                }, 5); // Adjust the interval for the desired animation speed
+            }
+        }
+        // stock counter
+        function stockCounter() {
+
+            if (!isCounting) {
+                cartonsCounter();
+                isCounting = true;
+                const spaceInterval = setInterval(() => {
+                    if (stockCount <= 4000) {
+                        // Update the counter in your footer
+
+                        stock.textContent = stockCount;
+                        stockCount += 50;
+                    } else {
+                        clearInterval(spaceInterval);
+                    }
+                }, 5); // Adjust the interval for the desired animation speed
+            }
+        }
+        // cartons counter
+        function cartonsCounter() {
+            if (!isCounting) {
+                isCounting = true;
+                const spaceInterval = setInterval(() => {
+                    if (cartonCount <= 82) {
+                        cartons.textContent = cartonCount;
+                        cartonCount += 1;
+                    } else {
+                        clearInterval(spaceInterval);
+                    }
+                }, 10); // Adjust the interval for the desired animation speed
+            }
+        }
+
+
+        // Check if the footer is in the viewport when the page loads
+        window.addEventListener("load", () => {
+            if (isElementInViewport(staff)) {
+                startCounter();
+            }
+        });
+
+        // Check if the footer is in the viewport when the user scrolls
+        window.addEventListener("scroll", () => {
+            if (isElementInViewport(staff)) {
+                startCounter();
+
+            } else {
+                // Reset the counter if the footer is not in the viewport
+                staffCounter = 0;
+                spaceCount = 0;
+                capacityCount = 0;
+                stockCount = 0;
+                cartonCount = 0;
+                isCounting = false;
+            }
+        });
+        AOS.init()
+    </script>
 </body>
 
 
