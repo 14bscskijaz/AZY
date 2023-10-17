@@ -157,6 +157,7 @@ h3 {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
+    width: 70%;
 }
 
 span {
