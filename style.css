@@ -19,6 +19,18 @@ header {
     padding: 2vh 8vw;
 }
 
+.wa-icon {
+    position: fixed;
+    height: 7vh;
+    left: 4vw;
+    top: 88vh;
+    z-index: 2;
+    border: .4vw solid #25D366;
+    border-radius: 50%;
+    background-color: #25D366;
+    cursor: pointer;
+}
+
 .logo {
     width: 50px;
     align-self: top;
