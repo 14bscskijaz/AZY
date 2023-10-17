@@ -19,17 +19,6 @@ header {
     padding: 2vh 8vw;
 }
 
-.wa-icon {
-    position: fixed;
-    height: 7vh;
-    left: 4vw;
-    top: 88vh;
-    z-index: 2;
-    border: .4vw solid #25D366;
-    border-radius: 50%;
-    background-color: #25D366;
-    cursor: pointer;
-}
 
 .logo {
     width: 50px;
@@ -52,7 +41,26 @@ header {
     width: 50%;
 }
 
-header a {
+.menu {
+    display: none;
+    position: absolute;
+    left: 40vw;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #eaf4f4;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: flex-start;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    justify-content: flex-start;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+header a,
+.menu a {
     text-decoration: none;
     font-size: 20px;
     padding-bottom: .5vh;
@@ -538,4 +546,37 @@ li {
     align-items: flex-start;
     padding-left: 5vw;
     text-align: left;
+}
+
+
+/** Media Queries for different screen sizes **/
+
+@media(max-width:650px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button,
+    .b1 {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .intro-text {
+        width: 90%;
+    }
 }

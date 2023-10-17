@@ -27,19 +27,16 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="menu-btn">
-            <img id="menu-icon" onclick="myFunction()" src="assets/menu.png">
+            <img style="width: 30px;" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png">
         </div>
-        <!--<div id="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
-        </div>-->
     </header>
-    <img class="wa-icon" src="assets/whatsapp-icon.png"
-        onclick="parent.open('https://api.whatsapp.com/send?phone=027829226489')">
-
+    <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
     <section class="section-1">
         <div class="intro-text">
             <h2>We provide smart city lighting control solutions across the world</h2>
@@ -163,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1300" class="section-8">
+    <!-- <section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1300" class="section-8">
         <span class="section-heading">Happy Clients</span>
         <h2>User's Testimonials</h2>
         <div class="client-tiles">
@@ -207,8 +204,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section-9">
+    </section> -->
+    <!-- <section class="section-9">
         <span class="section-heading">Statistical Data</span>
         <p style="width: 75%; text-align: center;">With over 300 customers since 2015 our experience has taught us that
             your satisfaction is the heart of our business.</p>
@@ -234,7 +231,7 @@
                 <p>Locations</p>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="section-6">
         <h3>Get free consultancy about your project</h3>
         <p style="color: white;">Elevate Your Solar Project with Free Expert Consultation: Our leading solar energy
@@ -304,143 +301,19 @@
     <script>
 
 
-        // Get a reference to the footer element
-        const staff = document.getElementById("stat1");
-        console.log(staff);
-        console.log("Hello World")
-        const space = document.getElementById("stat2");
-        const capacity = document.getElementById("stat3");
-        const stock = document.getElementById("stat4");
-        const cartons = document.getElementById("stat5");
 
-        // Function to check if an element is in the viewport
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-
-        let isCounting = false;
-        let staffCounter = 0;
-        let spaceCount = 0;
-        let capacityCount = 0;
-        let stockCount = 0;
-        let cartonCount = 0;
-        // Function to start the counter
-        function startCounter() {
-
-            if (!isCounting) {
-                // biniding all functions
-                spaceCounter();
-
-                isCounting = true;
-                const interval = setInterval(() => {
-                    if (staffCounter <= 300) {
-                        staff.textContent = staffCounter;
-                        staffCounter++;
-                    } else {
-                        clearInterval(interval);
-                    }
-                }, 5);
-            }
-        }
-        // space counter
-        function spaceCounter() {
-            if (!isCounting) {
-                capacityCounter();
-                isCounting = true;
-                const spaceInterval = setInterval(() => {
-                    if (spaceCount <= 32) {
-                        // Update the counter in your footer
-
-                        space.textContent = spaceCount;
-                        spaceCount += 1;
-                    } else {
-                        clearInterval(spaceInterval);
-                    }
-                }, 5); // Adjust the interval for the desired animation speed
-            }
-        }
-        // capacity counter
-        function capacityCounter() {
-
-            if (!isCounting) {
-                stockCounter();
-                isCounting = true;
-                const spaceInterval = setInterval(() => {
-                    if (capacityCount <= 24) {
-                        // Update the counter in your footer
-
-                        capacity.textContent = capacityCount;
-                        capacityCount += 1;
-                    } else {
-                        clearInterval(spaceInterval);
-                    }
-                }, 5); // Adjust the interval for the desired animation speed
-            }
-        }
-        // stock counter
-        function stockCounter() {
-
-            if (!isCounting) {
-                cartonsCounter();
-                isCounting = true;
-                const spaceInterval = setInterval(() => {
-                    if (stockCount <= 8) {
-                        // Update the counter in your footer
-
-                        stock.textContent = stockCount;
-                        stockCount += 1;
-                    } else {
-                        clearInterval(spaceInterval);
-                    }
-                }, 5); // Adjust the interval for the desired animation speed
-            }
-        }
-        // cartons counter
-        function cartonsCounter() {
-            if (!isCounting) {
-                isCounting = true;
-                const spaceInterval = setInterval(() => {
-                    if (cartonCount <= 4) {
-                        cartons.textContent = cartonCount;
-                        cartonCount += 1;
-                    } else {
-                        clearInterval(spaceInterval);
-                    }
-                }, 10); // Adjust the interval for the desired animation speed
-            }
-        }
-
-
-        // Check if the footer is in the viewport when the page loads
-        window.addEventListener("load", () => {
-            if (isElementInViewport(staff)) {
-                startCounter();
-            }
-        });
-
-        // Check if the footer is in the viewport when the user scrolls
-        window.addEventListener("scroll", () => {
-            if (isElementInViewport(staff)) {
-                startCounter();
-
-            } else {
-                // Reset the counter if the footer is not in the viewport
-                staffCounter = 0;
-                spaceCount = 0;
-                capacityCount = 0;
-                stockCount = 0;
-                cartonCount = 0;
-                isCounting = false;
-            }
-        });
         AOS.init()
+
+
+        function toggleMenu() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
     </script>
 </body>
 
