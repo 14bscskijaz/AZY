@@ -212,7 +212,7 @@ span {
 
 .img-container {
     overflow: hidden;
-
+    height: 28vh;
 }
 
 .card h3 {
@@ -247,7 +247,7 @@ span {
 }
 
 .card img {
-    width: 18vw;
+    width: 18.5vw;
     height: 28vh;
     transition: all 0.2s ease-in;
     object-fit: fill;
