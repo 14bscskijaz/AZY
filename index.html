@@ -139,26 +139,26 @@
             <div class="location-card lc-1">
                 <img src="assets/sydney.jpg" alt="">
                 <h3>Sydney</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <button style="width: 110px; height: 34px;">Book Now</button>
+                <p>Where the Harbour Meets the Horizon.</p>
+                <button style="width: 110px; height: 34px;">Contact Us</button>
             </div>
             <div class="location-card lc-3">
                 <img src="assets/capetown.jpg" alt="">
                 <h3>Capetown</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <button style="width: 110px; height: 34px;">Book Now</button>
+                <p>Where Nature Paints the Perfect Backdrop.</p>
+                <button style="width: 110px; height: 34px;">Contact Us</button>
             </div>
             <div class="location-card lc-2">
                 <img src="assets/lahore.jpg" alt="">
                 <h3>Lahore</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <button style="width: 110px; height: 34px;">Book Now</button>
+                <p>Where Tradition Meets Modern Vibrancy.</p>
+                <button style="width: 110px; height: 34px;">Contact Us</button>
             </div>
             <div class="location-card lc-4">
                 <img src="assets/port-elizabeth.jpg" alt="">
                 <h3>Port Elizabeth</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <button style="width: 110px; height: 34px;">Book Now</button>
+                <p>Where Adventure Sets Sail.</p>
+                <button style="width: 110px; height: 34px;">Contact Us</button>
             </div>
         </div>
     </section>
@@ -218,30 +218,27 @@
     </section>
     <section class="section-9">
         <span class="section-heading">Statistical Data</span>
-        <p style="width: 75%; text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem earum quos
-            distinctio itaque labore
-            necessitatibus harum et enim ea obcaecati.</p>
+        <p style="width: 75%; text-align: center;">With over 300 customers since 2015 our experience has taught us that your satisfaction is the heart of our business.</p>
         <div class="stats-flex">
             <div class="stat">
                 <b id="stat1"></b>
-                <p>Working Staff</p>
+                <p>Solar Installations</p>
             </div>
             <div class="stat">
                 <b id="stat2"></b>
-                <p>Working Staff</p>
+                <p>Team Members</p>
             </div>
             <div class="stat">
                 <b id="stat3"></b>
-                <p>Working Staff</p>
+                <p>Solar Models</p>
             </div>
             <div class="stat">
                 <b id="stat4"></b>
-                <p>Working Staff</p>
+                <p>Years of Experience</p>
             </div>
             <div class="stat">
                 <b id="stat5"></b>
-                <p>Working Staff</p>
+                <p>Locations</p>
             </div>
         </div>
     </section>
@@ -358,11 +355,11 @@
                 capacityCounter();
                 isCounting = true;
                 const spaceInterval = setInterval(() => {
-                    if (spaceCount <= 30000) {
+                    if (spaceCount <= 32) {
                         // Update the counter in your footer
 
                         space.textContent = spaceCount;
-                        spaceCount += 250;
+                        spaceCount += 1;
                     } else {
                         clearInterval(spaceInterval);
                     }
@@ -376,11 +373,11 @@
                 stockCounter();
                 isCounting = true;
                 const spaceInterval = setInterval(() => {
-                    if (capacityCount <= 15000) {
+                    if (capacityCount <= 24) {
                         // Update the counter in your footer
 
                         capacity.textContent = capacityCount;
-                        capacityCount += 100;
+                        capacityCount += 1;
                     } else {
                         clearInterval(spaceInterval);
                     }
@@ -394,11 +391,11 @@
                 cartonsCounter();
                 isCounting = true;
                 const spaceInterval = setInterval(() => {
-                    if (stockCount <= 4000) {
+                    if (stockCount <= 8) {
                         // Update the counter in your footer
 
                         stock.textContent = stockCount;
-                        stockCount += 50;
+                        stockCount += 1;
                     } else {
                         clearInterval(spaceInterval);
                     }
@@ -410,7 +407,7 @@
             if (!isCounting) {
                 isCounting = true;
                 const spaceInterval = setInterval(() => {
-                    if (cartonCount <= 82) {
+                    if (cartonCount <= 4) {
                         cartons.textContent = cartonCount;
                         cartonCount += 1;
                     } else {
