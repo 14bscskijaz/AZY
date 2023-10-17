@@ -203,7 +203,7 @@ span {
     cursor: pointer;
     padding: 2vh 1vw;
     border-radius: 10px;
-    row-gap: 1.5vh;
+    row-gap: 1.2vh;
     width: 18vw;
     align-items: center;
     background-color: white;
@@ -239,9 +239,11 @@ span {
     text-align: center;
     line-height: 1.2rem;
     font-size: 0.9rem;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .card img {
