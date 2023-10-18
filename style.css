@@ -557,6 +557,40 @@ li {
     text-align: left;
 }
 
+/** Styling for proucts page **/
+
+.products-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("assets/Products.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding: 10vh 0;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6vh;
+}
+
+.product {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 20%;
+}
+
+.product p {
+    width: 70%;
+    color: black;
+}
+
 
 /** Media Queries for different screen sizes **/
 
