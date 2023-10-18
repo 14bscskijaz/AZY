@@ -59,8 +59,7 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-header a,
-.menu a {
+a {
     text-decoration: none;
     font-size: 20px;
     padding-bottom: .5vh;
@@ -531,10 +530,15 @@ li {
     font-size: 14px;
 }
 
+footer a {
+    font-size: 15px;
+}
+
 .icons {
     display: flex;
     column-gap: 2vw;
 }
+
 
 
 
