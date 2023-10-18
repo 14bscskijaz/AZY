@@ -593,6 +593,8 @@ footer a {
     border-radius: 10px;
     background-color: white;
     padding-bottom: 4vh;
+    border: 1.5px solid #00a776;
+
 }
 
 .product img {
