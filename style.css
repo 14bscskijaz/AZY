@@ -578,8 +578,11 @@ li {
 
 .product {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
+    border: 1.5px solid #00a776;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .product img {
@@ -587,11 +590,15 @@ li {
     align-self: center;
     height: 100px;
     object-fit: contain;
+    padding-left: 2vw;
 }
 
 .product p {
-    width: 70%;
-    color: black;
+    width: 75%;
+    color: #6c757d;
+    font-size: 14px;
+    text-align: justify;
+
 }
 
 
