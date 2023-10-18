@@ -577,36 +577,37 @@ footer a {
 
 .products {
     display: grid;
+    row-gap: 6vh;
+    column-gap: 5vw;
+    padding: 8vh 4vw;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4vw;
-    row-gap: 8vh;
-    padding: 8vh 10vw;
     grid-template-rows: 1fr 1fr;
 }
 
 .product {
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    row-gap: 4vh;
-    padding: 4vh 0;
+    padding: 10px;
     border-radius: 10px;
+    background-color: white;
+    padding-bottom: 4vh;
 }
 
-
-.products img {
-    width: 12vw;
-    height: 12vh;
-    object-fit: fill;
+.product img {
+    width: 200px;
+    align-self: center;
+    height: 100px;
+    object-fit: contain;
 }
 
 .product p {
-    color: #7f7f7f;
-    padding: 0 2vw;
+    color: #6c757d;
+    font-size: 14px;
     font-size: 12px;
     text-align: justify;
+    padding: 0 1.5vw;
 }
 
 
