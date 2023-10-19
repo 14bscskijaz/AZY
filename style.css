@@ -706,6 +706,7 @@ textarea {
     border: 1px solid lightgray;
     color: black;
     border-radius: 5px;
+    height: 34vh;
 }
 
 textarea::placeholder {
