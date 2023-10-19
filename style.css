@@ -72,8 +72,17 @@ header a:hover {
     border-bottom: .5px solid #00a776;
 }
 
+.page-title {
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
 section {
     padding: 10vh 8vw;
+    text-align: center;
 }
 
 p {
@@ -312,7 +321,8 @@ span {
     transform: translateY(50%);
     width: 5vw;
 }
-.owl-carousel{
+
+.owl-carousel {
     max-width: 80%;
 }
 
@@ -329,11 +339,12 @@ span {
 }
 
 @media screen and (max-width: 500px) {
-.box img {
-    width: 167px !important;
-    height: 86px !important;
+    .box img {
+        width: 167px !important;
+        height: 86px !important;
+    }
 }
-}
+
 .box img {
     display: block;
     width: 10vw;
@@ -630,6 +641,26 @@ footer a {
     padding: 0 1.5vw;
 }
 
+/** Styling for contacts page **/
+
+.tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
+}
+
+.contact-tile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    border-right: 1px solid lightgray;
+    padding-right: 3vw;
+}
+
+.contact-tile p {
+    margin-bottom: 2vh;
+}
+
 
 /** Media Queries for different screen sizes **/
 
@@ -695,22 +726,22 @@ footer a {
 
 .gallery {
     background: #EEE;
-  }
-  
-  .gallery-cell {
+}
+
+.gallery-cell {
     width: 66%;
     height: 200px;
     margin-right: 10px;
     background: #8C8;
     counter-increment: gallery-cell;
-  }
-  
-  /* cell number */
-  .gallery-cell:before {
+}
+
+/* cell number */
+.gallery-cell:before {
     display: block;
     text-align: center;
     content: counter(gallery-cell);
     line-height: 200px;
     font-size: 80px;
     color: white;
-  }
+}
