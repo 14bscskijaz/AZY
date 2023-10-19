@@ -73,11 +73,9 @@ header a:hover {
 }
 
 .page-title {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 200;
-    color: black;
-    padding: 0;
-    margin: 0;
+    color: gray;
 }
 
 section {
@@ -647,7 +645,7 @@ footer a {
 
 .tiles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
     column-gap: 2vw;
 }
 
@@ -655,8 +653,10 @@ footer a {
     display: flex;
     flex-direction: column;
     row-gap: 2vh;
+}
+
+.divider {
     border-right: 1px solid lightgray;
-    padding-right: 3vw;
 }
 
 .contact-tile p {
