@@ -692,11 +692,19 @@ input::placeholder {
     font-size: 16px;
 }
 
-
 input:focus::-webkit-input-placeholder,
 input:focus::placeholder {
     color: transparent;
 }
+
+select {
+    height: 8vh;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding-left: 1vw;
+    font-size: 16px;
+}
+
 
 textarea {
     opacity: 0.8;
