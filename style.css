@@ -663,6 +663,54 @@ footer a {
     margin-bottom: 2vh;
 }
 
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2vh;
+}
+
+input {
+    width: 36vw;
+    height: 8vh;
+    padding-left: 1vw;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+
+input:focus::-webkit-input-placeholder,
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea {
+    opacity: 0.8;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: black;
+}
 
 /** Media Queries for different screen sizes **/
 
