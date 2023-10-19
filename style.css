@@ -330,7 +330,7 @@ span {
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 180px;
+    width: 175px;
 }
 
 @media screen and (max-width: 500px) {
@@ -342,14 +342,10 @@ span {
 
 .box img {
     display: block;
-    width: 10vw;
+    object-fit: contain;
+    width: 170px;
 }
 
-.box img {
-    width: 12vw;
-    height: 8vw;
-    object-fit: contain;
-}
 
 .section-6 {
     display: flex;
