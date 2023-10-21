@@ -742,6 +742,9 @@ select {
     font-size: 16px;
 }
 
+.select-default {
+    color: aqua;
+}
 
 textarea {
     padding-left: 1vw;
