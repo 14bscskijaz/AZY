@@ -556,8 +556,10 @@ li {
     font-size: 14px;
 }
 
-footer a {
+footer a,
+footer li {
     font-size: 15px;
+    font-weight: 400;
 }
 
 .icons {
@@ -565,6 +567,12 @@ footer a {
     column-gap: 2vw;
 }
 
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-right: 0.9vw;
+}
 
 .main {
     height: 40vh;
