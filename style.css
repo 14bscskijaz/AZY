@@ -721,6 +721,15 @@ textarea::placeholder {
 
 }
 
+/** Services Page**/
+.section-services {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("assets/Services-top.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /** Media Queries for different screen sizes **/
 
 @media(max-width:650px) {
