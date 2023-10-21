@@ -70,8 +70,18 @@ a {
 
 }
 
+a:hover {
+    font-weight: 800;
+}
+
+header a {
+    border-bottom: .5px solid transparent;
+}
+
 header a:hover {
     border-bottom: .5px solid #00a776;
+    transition: all .3s ease-in;
+
 }
 
 .page-title {
