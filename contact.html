@@ -79,14 +79,14 @@
             <h1 style="text-align: left; font-weight: 400; margin-bottom: 1vh;">Drop us a line!</h1>
             <input type="text" onfocus="this.value=''" placeholder='Name'>
             <input type="email" onfocus="this.value=''" placeholder='Email*'>
-            <select>
+            <select id="SelectCountry">
                 <option selected disabled class="select-default">-- Please Select an office --</option>
                 <option>Australia</option>
                 <option>South Africa</option>
                 <option>Pakistan</option>
             </select>
             <textarea onfocus="this.value=''" placeholder='Message'></textarea>
-            <button type="submit">Send</button>
+            <button onclick="OpenEmail()" type="button">Send</button>
         </form>
     </section>
     <!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1kyaB5hslIkeZUtZtLma0A5s3tR88kjs&ehbc=2E312F" width="640" height="480"></iframe> -->
@@ -160,4 +160,18 @@
     </footer>
 </body>
 
+<script>
+function OpenEmail() {
+    var e = document.getElementById("SelectCountry");
+    var text = e.options[e.selectedIndex].text;
+    if (text === '-- Please Select an office --') {
+    alert('Please choose an office');
+    }
+    else{
+    
+    window.open(`mailto:bustard-02.aurora@icloud.com?subject=Query for ${text} Office`);
+    }
+}
+
+</script>
 </html>
