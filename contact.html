@@ -77,15 +77,15 @@
     <section class="form-section">
         <form>
             <h1 style="text-align: left; font-weight: 400; margin-bottom: 1vh;">Drop us a line!</h1>
-            <input type="text" onfocus="this.value=''" placeholder='Name'>
-            <input type="email" onfocus="this.value=''" placeholder='Email*'>
+            <input id="Name" type="text" onfocus="this.value=''" placeholder='Name'>
+            <input id="Email" type="email" onfocus="this.value=''" placeholder='Email*'>
             <select id="SelectCountry">
                 <option selected disabled class="select-default">-- Please Select an office --</option>
                 <option>Australia</option>
                 <option>South Africa</option>
                 <option>Pakistan</option>
             </select>
-            <textarea onfocus="this.value=''" placeholder='Message'></textarea>
+            <textarea id="Message" onfocus="this.value=''" placeholder='Message'></textarea>
             <button onclick="OpenEmail()" type="button">Send</button>
         </form>
     </section>
@@ -168,8 +168,11 @@ function OpenEmail() {
     alert('Please choose an office');
     }
     else{
-    
-    window.open(`mailto:bustard-02.aurora@icloud.com?subject=Query for ${text} Office`);
+        var message = document.getElementById("Message").value;
+        var name=document.getElementById("Name").value;
+        var email=document.getElementById("Email").value;
+        console.log(name);
+    window.open(`mailto:bustard-02.aurora@icloud.com?subject=Query for ${text} Office&body=Name:${name} %0DEmail:${email} %0DMessage:${message}`);
     }
 }
 
