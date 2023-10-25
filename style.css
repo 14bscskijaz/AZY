@@ -417,7 +417,24 @@ span {
         margin: 0px 65px;
         padding: 0;
     }
-    
+    .section-3{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-3 .content{
+        width: 100%;
+    }
+    .section-3 h2, .section-3 span,  .section-3 p{ 
+        text-align: center !important;
+        display: block;
+    }
+    .section-3 button {
+        margin: 5px auto;
+    }
+    .section-3 img{
+        width: 100%;
+        margin: auto;
+    }
   }
 
 .location-card h3 {
