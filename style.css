@@ -351,6 +351,9 @@ span {
         width: 167px !important;
         height: 86px !important;
     }
+    .email{
+        display: flex;
+    }
 }
 
 .box img {
