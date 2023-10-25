@@ -909,6 +909,10 @@ textarea::placeholder {
         width: 100%;
     }
 
+    .section-6 p {
+        width: 100%;
+    }
+
     .form-section form input,
     .form-section form select,
     .form-section form textarea {
