@@ -721,7 +721,6 @@ footer li {
 .product p {
     color: #6c757d;
     font-size: 14px;
-    font-size: 12px;
     text-align: justify;
     padding: 0 1.5vw;
 }
@@ -893,24 +892,31 @@ textarea::placeholder {
     h3 {
         text-align: center;
     }
-    .tiles{
+
+    .tiles {
         display: unset;
-        
+
     }
-    .tiles .contact-tile{
+
+    .tiles .contact-tile {
         padding: 10px;
     }
-    .form-section form{
+
+    .form-section form {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100%;
     }
-    .form-section form input,.form-section form select, .form-section form textarea{
-       width: 100%;
+
+    .form-section form input,
+    .form-section form select,
+    .form-section form textarea {
+        width: 100%;
     }
-    .main{
+
+    .main {
         display: flex;
         justify-content: center;
     }
