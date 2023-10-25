@@ -167,7 +167,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .benefit {
@@ -182,6 +182,7 @@ h3 {
     align-items: top;
     justify-content: space-between;
     column-gap: 5vw;
+    row-gap: 4vh;
 }
 
 .section-3 img {
@@ -247,7 +248,7 @@ span {
     flex-direction: column;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    padding: 2vh 1vw;
+    padding: 1vh 1vw;
     border-radius: 10px;
     row-gap: 1.2vh;
     width: 18vw;
@@ -405,37 +406,52 @@ span {
     padding: 6vh 0;
     width: 25%;
 }
+
 @media screen and (max-width: 480px) {
-    .location-card{
+    .location-card {
         width: 90%;
         margin: 10px auto;
+        border-radius: 5px;
     }
-    .links{
+
+    .links {
         flex-direction: column;
+        row-gap: 2vh;
     }
-    .box{
+
+
+
+
+    .box {
         margin: 0px 65px;
         padding: 0;
     }
-    .section-3{
+
+    .section-3 {
         flex-direction: column;
         justify-content: center;
     }
-    .section-3 .content{
+
+    .section-3 .content {
         width: 100%;
     }
-    .section-3 h2, .section-3 span,  .section-3 p{ 
+
+    .section-3 h2,
+    .section-3 span,
+    .section-3 p {
         text-align: center !important;
         display: block;
     }
+
     .section-3 button {
         margin: 5px auto;
     }
-    .section-3 img{
+
+    .section-3 img {
         width: 100%;
         margin: auto;
     }
-  }
+}
 
 .location-card h3 {
     font-size: 24px;
@@ -816,13 +832,18 @@ textarea::placeholder {
         display: none;
     }
 
-    h2 {
+    .section-1 h2 {
         font-size: 20px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     button,
     .b1 {
-        width: 90px;
+        width: 120px;
         height: 30px;
         font-size: 12px;
     }
@@ -863,6 +884,10 @@ textarea::placeholder {
 
     .card img {
         width: 100%;
+    }
+
+    h3 {
+        text-align: center;
     }
 }
 
