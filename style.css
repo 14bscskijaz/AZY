@@ -897,7 +897,8 @@ textarea::placeholder {
         display: unset;
 
     }
-    .tiles .contact-tile{
+
+    .tiles .contact-tile {
         padding: 28px;
     }
 
@@ -910,7 +911,7 @@ textarea::placeholder {
     }
 
     .section-6 p {
-        width: 100%;
+        width: 45%;
     }
 
     .form-section form input,
@@ -923,11 +924,13 @@ textarea::placeholder {
         display: flex;
         justify-content: center;
     }
-    .b2{
+
+    .b2 {
         width: 165px !important;
         height: 48px !important;
     }
-    .section-extra{
+
+    .section-extra {
         padding: 0vh 8vw !important;
     }
 }
