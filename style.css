@@ -351,7 +351,8 @@ span {
         width: 167px !important;
         height: 86px !important;
     }
-    .email{
+
+    .email {
         display: flex;
     }
 }
@@ -947,4 +948,35 @@ textarea::placeholder {
     /* your iframe height */
     margin-top: -480px;
     /* your iframe height */
+}
+
+/* Media Queries for other pages */
+@media(max-width:650px) {
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 4vh;
+
+    }
+
+    .flex-content {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        row-gap: 2vh;
+    }
+
+    .flex-content p {
+        text-align: justify;
+    }
+
+    .about-flex img {
+        width: 100%;
+        height: 250px;
+    }
+
+
+
 }
