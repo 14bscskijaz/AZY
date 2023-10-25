@@ -823,6 +823,10 @@ textarea::placeholder {
     background-size: cover;
 }
 
+.services-section {
+    padding: 8vh 8vw;
+}
+
 /** Media Queries for different screen sizes **/
 
 @media(max-width:650px) {
@@ -911,7 +915,7 @@ textarea::placeholder {
     }
 
     .section-6 p {
-        width: 45%;
+        width: 100%;
     }
 
     .form-section form input,
@@ -1006,4 +1010,7 @@ textarea::placeholder {
         width: 150px;
     }
 
+    .services-section {
+        padding: 4vh 8vw;
+    }
 }
