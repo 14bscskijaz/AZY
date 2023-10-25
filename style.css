@@ -893,6 +893,27 @@ textarea::placeholder {
     h3 {
         text-align: center;
     }
+    .tiles{
+        display: unset;
+        
+    }
+    .tiles .contact-tile{
+        padding: 10px;
+    }
+    .form-section form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-section form input,.form-section form select, .form-section form textarea{
+       width: 100%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .gallery {
