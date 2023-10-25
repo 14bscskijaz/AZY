@@ -956,6 +956,14 @@ textarea::placeholder {
         height: 250px;
     }
 
+    .products {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 8vh 6vw;
+    }
 
+    .product img {
+        width: 150px;
+    }
 
 }
