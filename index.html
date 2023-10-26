@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -144,25 +145,33 @@
 				<img src="assets/sydney.jpg" alt="" />
 				<h3>Sydney</h3>
 				<p>Where the Harbour Meets the Horizon</p>
-				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">Contact Us</button>
+				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">
+					Contact Us
+				</button>
 			</div>
 			<div class="location-card lc-3">
 				<img src="assets/capetown.jpg" alt="" />
 				<h3>Capetown</h3>
 				<p>Where Nature Paints the Perfect Backdrop</p>
-				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 36px">Contact Us</button>
+				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 36px">
+					Contact Us
+				</button>
 			</div>
 			<div class="location-card lc-2">
 				<img src="assets/lahore.jpg" alt="" />
 				<h3>Lahore</h3>
 				<p>Where Tradition Meets Modern Vibrancy</p>
-				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">Contact Us</button>
+				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">
+					Contact Us
+				</button>
 			</div>
 			<div class="location-card lc-4">
 				<img src="assets/port-elizabeth.jpg" alt="" />
 				<h3>Port Elizabeth</h3>
 				<p>Where Adventure Sets Sail</p>
-				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">Contact Us</button>
+				<button onclick="location.href = 'contact.html';" style="width: 110px; height: 34px">
+					Contact Us
+				</button>
 			</div>
 		</div>
 	</section>
@@ -271,7 +280,9 @@
 			solar energy company offers personalized guidance for your sustainable
 			energy endeavor.
 		</p>
-		<button onclick="location.href = 'contact.html';">Ask us a question</button>
+		<button onclick="location.href = 'contact.html';">
+			Ask us a question
+		</button>
 	</section>
 
 	<footer>
@@ -316,10 +327,18 @@
 					<div class="col">
 						<p>Get in touch</p>
 						<ul>
-							<li><img class="icon" src="assets/address-icon.png">49/1 Circular Road, Lahore, Pakistan.
+							<li>
+								<img class="icon" src="assets/address-icon.png" />49/1
+								Circular Road, Lahore, Pakistan.
 							</li>
-							<li><img class="icon" src="assets/mail-icon.png"> ali.ahmad@azycommodities.com</li>
-							<li> <img class="icon" src="assets/call-icon.png"> +92 318 8662171</li>
+							<li class="email">
+								<img class="icon" src="assets/mail-icon.png" />
+								ali.ahmad@azycommodities.com
+							</li>
+							<li>
+								<img class="icon" src="assets/call-icon.png" /> +92 318
+								8662171
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -334,10 +353,11 @@
 		AOS.init();
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
-				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				autoPlay: 10000, //Set AutoPlay to 3 seconds
 				items: 5,
+				center: true,
 				itemsDesktop: [1199, 3],
-				itemsDesktopSmall: [979, 3],
+				itemsDesktopSmall: [775, 3],
 			});
 		});
 

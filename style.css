@@ -177,7 +177,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .benefit {
@@ -192,6 +192,7 @@ h3 {
     align-items: top;
     justify-content: space-between;
     column-gap: 5vw;
+    row-gap: 4vh;
 }
 
 .section-3 img {
@@ -257,7 +258,7 @@ span {
     flex-direction: column;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    padding: 2vh 1vw;
+    padding: 1vh 1vw;
     border-radius: 10px;
     row-gap: 1.2vh;
     width: 18vw;
@@ -360,6 +361,10 @@ span {
         width: 167px !important;
         height: 86px !important;
     }
+
+    .email {
+        display: flex;
+    }
 }
 
 .box img {
@@ -411,9 +416,55 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 3vh;
+    row-gap: 20px;
     padding: 6vh 0;
     width: 25%;
+}
+
+@media screen and (max-width: 480px) {
+    .location-card {
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .links {
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+
+
+
+    .box {
+        margin: 0px 65px;
+        padding: 0;
+    }
+
+    .section-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-3 .content {
+        width: 100%;
+    }
+
+    .section-3 h2,
+    .section-3 span,
+    .section-3 p {
+        text-align: center !important;
+        display: block;
+    }
+
+    .section-3 button {
+        margin: 5px auto;
+    }
+
+    .section-3 img {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 .location-card h3 {
@@ -680,7 +731,6 @@ footer li {
 .product p {
     color: #6c757d;
     font-size: 14px;
-    font-size: 12px;
     text-align: justify;
     padding: 0 1.5vw;
 }
@@ -783,6 +833,10 @@ textarea::placeholder {
     background-size: cover;
 }
 
+.services-section {
+    padding: 8vh 8vw;
+}
+
 /** Media Queries for different screen sizes **/
 
 @media(max-width:650px) {
@@ -795,13 +849,18 @@ textarea::placeholder {
         display: none;
     }
 
-    h2 {
+    .section-1 h2 {
         font-size: 20px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     button,
     .b1 {
-        width: 90px;
+        width: 120px;
         height: 30px;
         font-size: 12px;
     }
@@ -843,6 +902,51 @@ textarea::placeholder {
     .card img {
         width: 100%;
     }
+
+    h3 {
+        text-align: center;
+    }
+
+    .tiles {
+        display: unset;
+
+    }
+
+    .tiles .contact-tile {
+        padding: 28px;
+    }
+
+    .form-section form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-6 p {
+        width: 100%;
+    }
+
+    .form-section form input,
+    .form-section form select,
+    .form-section form textarea {
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .b2 {
+        width: 165px !important;
+        height: 48px !important;
+    }
+
+    .section-extra {
+        padding: 4vh 8vw !important;
+    }
 }
 
 .gallery {
@@ -869,12 +973,54 @@ textarea::placeholder {
 
 .overlay {
     background: transparent;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 580px;
+    /* height: 580px; */
     /* your iframe height */
-    top: 480px;
+    /* top: 480px; */
     /* your iframe height */
-    margin-top: -480px;
+    /* margin-top: -480px; */
     /* your iframe height */
+}
+
+/* Media Queries for other pages */
+@media(max-width:650px) {
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 4vh;
+
+    }
+
+    .flex-content {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        row-gap: 2vh;
+    }
+
+    .flex-content p {
+        text-align: justify;
+    }
+
+    .about-flex img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 8vh 6vw;
+    }
+
+    .product img {
+        width: 150px;
+    }
+
+    .services-section {
+        padding: 4vh 8vw;
+    }
 }
