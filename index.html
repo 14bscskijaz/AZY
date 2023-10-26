@@ -35,6 +35,9 @@
 		</div>
 	</header>
 	<div class="menu" id="menu">
+		<div class="m-btn">
+			<img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png" />
+		</div>
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
 		<a href="products.html">Products</a>
@@ -315,7 +318,7 @@
 						<ul>
 							<li><img class="icon" src="assets/address-icon.png">49/1 Circular Road, Lahore, Pakistan.
 							</li>
-							<li><img class="icon" src="assets/mail-icon.png">  ali.ahmad@azycommodities.com</li>
+							<li><img class="icon" src="assets/mail-icon.png"> ali.ahmad@azycommodities.com</li>
 							<li> <img class="icon" src="assets/call-icon.png"> +92 318 8662171</li>
 						</ul>
 					</div>
@@ -340,10 +343,12 @@
 
 		function toggleMenu() {
 			var x = document.getElementById("menu");
-			if (x.style.display === "none") {
-				x.style.display = "flex";
+			if (x.style.visibility === "visible") {
+				x.style.opacity = "0";
+				x.style.visibility = "hidden";
 			} else {
-				x.style.display = "none";
+				x.style.opacity = "1";
+				x.style.visibility = "visible";
 			}
 		}
 	</script>

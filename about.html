@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>About Us</title>
 </head>
 
@@ -28,6 +32,13 @@
       <img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png" />
     </div>
   </header>
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
   <section class="section-about main">
     <span class="page-title">About</span>
   </section>
@@ -120,8 +131,8 @@
             <ul>
               <li><img class="icon" src="assets/address-icon.png">49/1 Circular Road, Lahore, Pakistan.
               </li>
-              <li><img class="icon" src="assets/mail-icon.png">  ali.ahmad@azycommodities.com</li>
-							<li> <img class="icon" src="assets/call-icon.png"> +92 318 8662171</li>
+              <li><img class="icon" src="assets/mail-icon.png"> ali.ahmad@azycommodities.com</li>
+              <li> <img class="icon" src="assets/call-icon.png"> +92 318 8662171</li>
             </ul>
           </div>
         </div>
@@ -131,6 +142,9 @@
       <p>&copy; 2023. AZY Power | ABN 32 635 230 643</p>
     </div>
   </footer>
+  <script>AOS.init();
+
+  </script>
 </body>
 
 </html>
