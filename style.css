@@ -25,6 +25,7 @@ header {
 .logo {
     width: 50px;
     align-self: top;
+    cursor: pointer;
 }
 
 .menu-btn {
@@ -86,11 +87,11 @@ a:hover {
     font-weight: 800;
 }
 
-header a {
+.right-nav a {
     border-bottom: .5px solid transparent;
 }
 
-header a:hover {
+.right-nav a:hover {
     border-bottom: .5px solid #00a776;
     transition: all .3s ease-in;
 

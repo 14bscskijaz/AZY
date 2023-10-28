@@ -8,3 +8,6 @@ function toggleMenu() {
         x.style.visibility = "visible";
     }
 }
+function toHome(){
+    window.location.href = 'index.html';
+}

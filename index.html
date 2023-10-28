@@ -18,9 +18,9 @@
 
 <body>
 	<header>
-		<div class="left-nav">
+		<div class="left-nav" onclick="toHome()">
 			<img class="logo" src="assets/solar-energy.png" />
-			<p style="font-size: 18px; color: #002855; font-weight: 600">
+			<p style="font-size: 18px; cursor: pointer; color: #002855; font-weight: 600">
 				AZY COMMODITIES
 			</p>
 		</div>
@@ -106,7 +106,7 @@
 		<div class="cards">
 			<div class="card">
 				<div class="img-container">
-					<img src="assets/Home-2.jpg" alt="" />
+					<img src="assets/Home-index.jpeg" alt="" />
 				</div>
 				<h3>Homes</h3>
 				<p>
@@ -118,7 +118,7 @@
 			</div>
 			<div class="card">
 				<div class="img-container">
-					<img src="assets/home.jpg" alt="" />
+					<img src="assets/Industry-index.jpeg" alt="" />
 				</div>
 				<h3>Industries</h3>
 				<p>
@@ -130,7 +130,7 @@
 			</div>
 			<div class="card">
 				<div class="img-container">
-					<img src="assets/Commercial.jpg" alt="" />
+					<img src="assets/Commercial-index.jpg" alt="" />
 				</div>
 				<h3>Commercial</h3>
 				<p>
@@ -375,6 +375,10 @@
 				x.style.opacity = "1";
 				x.style.visibility = "visible";
 			}
+		}
+
+		function toHome(){
+			window.location.href = 'index.html';
 		}
 	</script>
 </body>
