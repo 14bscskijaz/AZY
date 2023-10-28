@@ -118,6 +118,7 @@ p {
     height: 70vh;
     width: 100%;
     object-fit: fill;
+    filter: brightness(80%);
 }
 
 .intro-text {
