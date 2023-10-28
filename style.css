@@ -122,9 +122,9 @@ p {
 
 .intro-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     padding-left: 10vw;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     width: 45%;
     display: flex;
     flex-direction: column;
