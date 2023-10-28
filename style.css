@@ -124,9 +124,9 @@ p {
 
 .intro-text {
     position: absolute;
-    top: 45%;
+    top: 60%;
     padding-left: 10vw;
-    transform: translateY(-45%);
+    transform: translateY(-60%);
     width: 45%;
     display: flex;
     flex-direction: column;
