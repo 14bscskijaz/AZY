@@ -99,7 +99,7 @@ a:hover {
 
 .page-title {
     font-size: 32px;
-    font-weight: 200;
+    font-weight: 600;
     color: white;
 }
 
@@ -655,7 +655,7 @@ footer li {
     height: 40vh;
     padding: 10vh 8vw;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 /** About Page **/
@@ -699,7 +699,7 @@ footer li {
 
 .section-product {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url("assets/Products.jpg");
+        url("assets/Products-page.jpeg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
