@@ -124,7 +124,7 @@ p {
 
 .intro-text {
     position: absolute;
-    top: 70%;
+    top: 65%;
     padding-left: 10vw;
     transform: translateY(-70%);
     width: 45%;
@@ -152,6 +152,55 @@ button:hover {
     background-color: white;
     color: #00a776;
     transition: all .5s ease;
+}
+
+
+/*Code for arrow animation on button */
+.arrow {
+    position: absolute;
+    top: 75%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.arrow span:hover{
+    border-bottom: 5px solid #00a776;
+    border-right: 5px solid #00a776;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
 
 h2 {
@@ -379,7 +428,7 @@ span {
 }
 
 
-.section-6 {
+.section-6,.section-ver {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -394,6 +443,7 @@ span {
 
 }
 
+
 .section-6 p {
     width: 80%;
     text-align: center;
@@ -407,6 +457,10 @@ span {
     padding-top: 4vh;
     row-gap: 4vh;
 
+}
+
+.section-ver{
+    background: #33cccc;
 }
 
 .location-cards {
@@ -987,6 +1041,23 @@ textarea::placeholder {
     /* your iframe height */
     /* margin-top: -480px; */
     /* your iframe height */
+}
+
+
+/* This image container is for verification page */
+.image-container
+{   
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.image-container img
+{
+ object-fit: contain;
+ width: 50vw;
+height: 40vh;
 }
 
 /* Media Queries for other pages */
